@@ -1,5 +1,16 @@
 # tiny-oscilloscope
-A shitty scope that no one should build
+A shitty oscilloscope that no one in their right mind should build
+
+![Showing a sine wave](assets/sine.jpg)
+
+- Channels: 1 floating analog input with selectable fixed falling edge trigger
+- Vertical Range: 0-5V (1x), 0-15V (3x)
+- Vertical Resolution: 3 bits
+- Bandwidth: I don't know
+- Sample rate: 150kSa/s
+- Horizontal Resolution: 3 bits
+- Memory size: 0 points
+- Advanced Features: nope
 
 This repo is designed to help people learn how to design something 
 like this, both hardware and software. I hope that this can help others
@@ -20,12 +31,12 @@ In the ![design notes document](/design.md), you can learn about:
 I used the Arduino IDE to upload this to an ATTINY85 using ISP and
 Spence Konde's Attinycore, using these settings:
 
-Board: "ATtiny25/45/85 (No Bootloader)"
-Chip: "Attiny85"
-Clock: "16MHz (PLL)"
-B.O.D.: "B.O.D. disabled"
-Timer 1 Clock: "CPU"
-millis()/micros(): "disabled"
+- Board: "ATtiny25/45/85 (No Bootloader)"
+- Chip: "Attiny85"
+- Clock: "16MHz (PLL)"
+- B.O.D.: "B.O.D. disabled"
+- Timer 1 Clock: "CPU"
+- millis()/micros(): "disabled"
 
 The compiled binary is 642B, allowing usage on even the ATTINY25. Since the 
 code makes use of Timer1, which is pretty much unique to the 'X5 family, 
@@ -67,7 +78,7 @@ running mode, starting one sweep after another. Right, it sets the scope into
 falling-edge trigger mode, in which a sweep will only happen when the signal 
 has a falling edge.
 
--The scope does not support measuring signals below ground or above Vdd, which is 
-usually a battery voltage and must be between 3 and 5 volts. A 1S Li-ion cell is 
-perfect for this. To measure signals outside this range, attenuate it and/or 
-couple it to Vdd/2, via either of the switches. 
+-The scope does not support measuring signals below its own ground or above Vdd, 
+which is usually a battery voltage and must be between 3 and 5 volts. A 1S 
+Li-ion cell is perfect for this. To measure signals outside this range, attenuate 
+it and/or AC couple it to Vdd/2, via either of the switches. 
