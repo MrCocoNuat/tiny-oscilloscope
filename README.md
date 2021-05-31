@@ -78,7 +78,7 @@ running mode, starting one sweep after another. Right, it sets the scope into
 falling-edge trigger mode, in which a sweep will only happen when the signal 
 has a falling edge.
 
--The scope does not support measuring signals below its own ground or above Vdd, 
+- The scope does not support measuring signals below its own ground or above Vdd, 
 which is usually a battery voltage and must be between 3 and 5 volts. A 1S 
 Li-ion cell is perfect for this. To measure signals outside this range, attenuate 
 it and/or AC couple it to Vdd/2, via either of the switches. 
