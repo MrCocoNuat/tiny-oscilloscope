@@ -1,6 +1,6 @@
 //SET THE ATTINY85 to 16MHz operation!
 
-void setup() {
+int main() {
   // put your setup code here, to run once:
   cli(); //global interrupt disable
   
