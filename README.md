@@ -39,7 +39,7 @@ Spence Konde's Attinycore, using these settings:
 - millis()/micros(): "disabled"
 
 The compiled binary is 642B, allowing usage on even the ATTINY25. Since the 
-code makes use of Timer1, which is pretty much unique to the 'X5 family, 
+code makes use of Timer1, which is pretty much unique to the 'x5 family, 
 it will only work on those. You should probably just use an '85, since it is 
 barely more expensive than a '25 or '45 and with much more flash/RAM.
 
