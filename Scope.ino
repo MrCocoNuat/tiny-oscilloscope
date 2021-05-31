@@ -1,7 +1,6 @@
-//SET THE ATTINY85 to 16MHz operation!
+//Set ATTINY85 to 16MHz operation!
 
 int main() {
-  // put your setup code here, to run once:
   cli(); //global interrupt disable
   
   DDRB = (1 << DDB1) | (1 << DDB0); //pin0:SERCLK pin1:SERDATA outputs
