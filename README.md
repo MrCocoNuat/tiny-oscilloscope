@@ -40,6 +40,8 @@ The compiled binary is 642B, allowing usage on even the ATTINY25. Since the code
 
 This project can be built on a 18x24 PTH protoboard, available straight from China for cheap from many retailers, including Amazon. However, I HIGHLY DISCOURAGE THIS, since the construction on such a small protoboard will be  terribly complicated. Either use a much larger protoboard, or spin up a PCB for this project. Have fun!
 
+If you are using ordinary 5mm LEDs and you want to pack them as tightly as I did, you will have to use flush cutters to cut some of the "lip" off of the bottom of each LED. Otherwise they simply will not fit. Of course, you could use a premade [8x8 LED multiplexed matrix](https://www.adafruit.com/product/454), which would really simplify some of the worst wiring, but then again now you are stuck with all of the LEDs being the same color. So, really, your choice.
+
 ![Front of PCB](assets/front.png)
 ![Back of PCB](assets/back.jpg)
 ![Back of PCB, diagonal view](assets/grid.jpg)
