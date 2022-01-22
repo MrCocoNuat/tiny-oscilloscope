@@ -1,5 +1,5 @@
 # tiny-oscilloscope
-A shitty oscilloscope that no one in their right mind should build
+An oscilloscope that no one in their right mind should build
 
 ![Showing a sine wave](assets/sine.jpg)
 
